@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    
+}
+
+header img {
+    width: 170px;
+}
+
+.buttoface {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+ 
+}
+.buttomapplee,.buttomgoogle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.buttom{
+    width: 500px;
+    background-color: #3B5998;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 999px;
+    gap: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+}
+
+.buttomapple {
+    width: 500px;
+    background-color: #191919;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 999px;
+    gap: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    height: 50px;
+}
+
+.gooole {
+    width: 500px;
+    background-color: #ffff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #727272;
+    border-radius: 999px;
+    gap: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    height: 50px;
+    border: 1px solid #727272;
+}
+
+.buttomgoogle a {
+    color: #727272;
+    text-decoration: none;
+}
+.buttom:hover, .buttomapple:hover{
+    border: 1px solid #000;
+    margin-top: -1px;
+    cursor:auto;
+    pointer-events: none;
+}
+
+.gooole:hover {
+    border: 1px solid #000;
+    margin-top: -1px;
+    /* margin-bottom: -2px; */
+    pointer-events: none;
+    margin: -0.1px;
+}
+
+.ou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dados p{
+    margin-right: 200px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dados input {
+    /* margin-right: -30px; */
+    width: 490px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+input[type=text] select {
+     border: 2px solid #000;
+}
+
+
+.senha:hover > span{
+    border-bottom: 1px solid #000;
+}
+
+.senha {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+input[type=radio] {
+    height: 20px;
+    margin-left: 62px;
+}
+
+.radio {
+    margin-top: 10px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 215px;
+   
+  
+}
+.inputtxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 215px; */
+
+}
+
+.button-enviar button {
+    width: 133px;
+    height: 50px;
+    border-radius: 5000px;
+    background-color: #1ED760;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    margin-right: 81px;
+
+   
+}
+
+.buttomborder {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.buttomborder span {
+    margin-top: 10px;
+    height: 1px;
+    width: 500px;
+}
+.buttomborder > span {
+   
+    border-bottom: 1px solid #D9DADC;
+}
+
+.final {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.final span {
+    display: flex;
+    justify-content: center;
+}
+
+.erro {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+    /* display: none; */
+}
+
+.buttomerror {
+    background-color: #E91429;
+    color: #fff;
+    width: 480px;
+    gap: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    display: none;
+}
+
+.flex {
+    display: flex;
+}

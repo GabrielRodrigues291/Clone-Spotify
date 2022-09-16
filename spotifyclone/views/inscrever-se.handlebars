@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrever-se - Spotify</title>
+    <link rel="stylesheet" href="style/inscrever.css">
+    <script src="https://kit.fontawesome.com/649acc4595.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/3c/d4/53/3cd453f0a81c4c04d2f38c6e04219ea6.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+            <img src="img/spotify-logo-preto-png.png" alt="logo Spotify">
+    </header>
+    
+    <div class="erro">
+        <div class="buttomerror">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Nome de usuário ou senha incorretos.
+        </div>
+    </div>
+    <div class="buttoface">
+        <div class="buttom">
+            <i class="fa-brands fa-square-facebook">
+                
+            </i>
+            <P>CONTINUAR COM O FACEBOOK</P>
+        </div>
+
+    </div>
+
+  
+    
+
+    <div class="buttomgoogle">
+        <div class="gooole">
+            <i class="fa-brands fa-google"></i>
+            CONTINUAR COM O GOOGLE
+        </div>
+    </div>
+
+
+    
+
+    <div class="ou">
+        <div class="center">
+            <p>ou</p>
+        </div>
+    </div>
+
+    <div class="dados">
+      
+
+        <form action="/cadastro" method="post">
+            <p style="margin-left: 19px;">Qual é o seu e-mal</p>
+            <input type="text" placeholder="Endereço de e-mail ou nome de usuário" style="margin-left: 19px;" id="email" name="email">
+            <div class="error1" style="margin-left: 18px; color: red;display: none; margin-top: 10px;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Você deve inserir seu e-mail
+            </div>
+            <div class="span" style="margin-left: 19px;">
+                <span>Usar número de telefone.</span>
+            </div>
+
+            <p style="margin-left: 19px;">Confirme seu e-mail</p>
+            <input type="text" placeholder="Insira o e-mail novamente." style="margin-left: 19px;" id="confirmaremail" name="cofirmar">
+            <div class="error2" style="margin-left: 18px; color: red;display: none; margin-top: 10px;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Você deve Confirmar o seu Email
+            </div>
+
+            <p style="margin-left: 19px;">Crie uma senha</p>
+            <input type="password" placeholder="Crie uma senha." style="margin-left: 19px;" id="senha" name="senhaconf">
+            <div class="error3" style="margin-left: 18px; color: red;display: none; margin-top: 10px;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Você precisa inserir uma senha
+            </div>
+
+            <p style="margin-left: 19px;">Como devemos chamar você?</p>
+            <input type="text" placeholder="Insira um nome de perfil" style="margin-left: 19px;" id="nome" name="apelido">
+            <p id="hiden" style="margin-left: 19px; font-weight: normal; margin-top: 10px; margin-bottom: 20px;">isso aparece no seu perfil</p>
+            <div class="error4" style="margin-left: 18px; color: red;display: none; margin-top: 10px;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Você deve inserir um nome para seu perfil
+            </div>
+
+            <p style="margin-left: 19px;">Qual é a sua data de nascimento?</p>
+
+            <div class="flexnasc">
+                <div class="dia">
+                    <span style="margin-bottom: 10px;">Dia</span> 
+                    <input type="text" placeholder="DD" style="margin-bottom: 10px;" id="dia" name="dianasci">
+                </div>
+
+                <div class="dia">
+                    <span id="spanmes" style="margin-bottom: 10px;">Mês</span> 
+                    <select name="mesdados" id="mes" class="escolha" style="width: 200px; height: 56px;">
+                        <option disabled selected style="background-color: #C8C8C8;">Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    
+                </div>
+
+                <div class="dia">
+                    <span style="margin-bottom: 10px;">Ano</span> 
+                    <input type="text" placeholder="DDDD" style="margin-bottom: 10px;" id="ano" name="anonasci" maxlength="4">
+                    
+                </div>
+            </div>
+                
+
+            <div class="error5" style="color: red;display: none;">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Insira um dia valido para o mês.
+                    </div>
+
+                    <div class="error6" style="color: red;display: none;">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Selecione o Mês de nascimento. 
+                    </div>
+
+                    <div class="error7" style="color: red;display: none;">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Insira um ano Válido
+                    </div>
+            </div>
+
+            <div class="radios_sx">
+                <div class="m">
+                    <p>masculido</p> 
+                    <input type="radio" name="b" id="m" value="1">
+                    
+                </div>
+            
+                <div class="f">
+                    <input type="radio" name="b" id="f" value="2">
+                    <p>feminino</p> 
+                </div> 
+                
+                <div class="o">
+                    <input type="radio" name="b" id="o" value="3">
+                    <p style="width: 300px;">Não binário</p> 
+                </div>
+            </div>
+
+            <div class="error8" style="color: red;display: none; margin-left: margin-left: 500px;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Selecione seu gênero
+            </div>
+          
+
+            <div class="radiotext" style="margin-top: 20px;">
+                <input type="radio" name="" id="">
+                <span>Não quero receber mensagens de marketing do Spotify</span> 
+                
+                <div class="" style="margin-top: 10px;">
+                    <input type="radio" name="" id="margin-left">
+                    <span id="margin-left">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing</span> 
+                </div>
+
+                <div class="" style="display: flex; margin-top: 10px; margin-bottom: 10px;">
+                    <input type="radio" name="" id="termo">
+                    <span style="width: 500px; display: flex;">Eu concordo com os  <div class="termos"><span>termos e Condições de Uso do Spotify</span></div></span> 
+                </div>
+                <div class="error9" style="color: red;display: none;">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Aceite os Termos e condições para continuar.
+                </div>
+              
+                <div class="radiotext" style="display: flex; margin-top: 15px; margin-bottom: 10px; margin-left: 27px;">
+                    <span style="display: flex; text-align: center; flex-direction: column; font-size: 12px; margin-left: 50px;">Para saber mais sobre como o Spotify coleta, ultiliza, compartilha e protege seus<br/> dados pessoais,leia a   <div class="termos"><span>Pólitica de Privacidade do Spotify</span></div></span> 
+                </div>
+            </div>
+
+            <div class="radio">
+                <div class="button-enviar" style="display: flex; justify-content: center;">
+                    <button style="cursor: pointer; margin-right: 49px; margin-top: 10px;">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+  
+
+    <div class="temconta">
+        <p>Já tem uma conta?</p><span><a href="/login">Faça login.</a></span>
+    </div>
+    <script src="scripts/inscrever.js">
+
+    </script>
+</body>
+</html>
